@@ -283,8 +283,8 @@ namespace ModelReplacement.AvatarBodyUpdater
             }
         }
 
-        // Update is called once per frame
-        void Update() {
+        // FixedUpdate is called once per physics-frame
+        void FixedUpdate() {
             if (!initializedPreview) { return; }
             // PopulateFingers();
             if (playerObject != null) { playerObject.GetComponentInChildren<SkinnedMeshRenderer>().enabled = renderPlayer; }
