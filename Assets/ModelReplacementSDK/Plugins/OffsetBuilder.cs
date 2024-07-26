@@ -209,7 +209,7 @@ namespace ModelReplacement.AvatarBodyUpdater
                 matchingTransforms.AddRange(childTransforms.Where(x => x.name == sk.name));
                 if (matchingTransforms.Count > 0)
                 {
-                    if (matchingTransforms.Count > 0)
+                    if (matchingTransforms.Count > 1)
                     {
                         Debug.LogWarning($"Ambiguous match: bone '{sk.name}' matches multiple transforms");
                     }
